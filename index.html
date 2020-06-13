@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 <title>portfolio</title>
 </head>
 <body>
   
-<header>
-    <h1><center>Portfolio</h1>
-
-
-<nav><center>  
-        <a href="#Home">Home</a>|
-        <a href="#About">About</a>|
-        <a href="#Work">Work</a>|
-        <a href="#Resume">Resume</a>|
-        <a href="#Contact">contact</a>
-</center>
-    </nav>
+<header class="header">
+    
+      <div class="wrap">
+        <header>
+            <h1>portfolio</h1>
+            <nav>
+              <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Work">Work</a></li>
+              <li><a href="#Resume">Resume</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+      </div>
  </header>
  <main>
-<section id=Home></section>
+<section ></section>
   <section id=About>  <h3>About:</h3>
-<ul>
-    <li>first name: Mohamed</li>
-    <li>last name: Araissia</li>
-    <li>age: 33</li>
-    <li>profession:  developper</li>
+<ul class="secondlist">
+    <li class="list">first name: Mohamed</li>
+    <li class="list">last name: Araissia</li>
+    <li class="list">age: 33</li>
+    <li class="list">profession:  developper</li>
 </ul>
 
 </section>
 <section id=Work>
     <h3>Work:</h3>
-    <iframe width="420" height="315"
+    <iframe class="video" width="420" height="315"
 src="https://www.youtube.com/embed/PkZNo7MFNFg">
 </iframe>
+<iframe class="video" width="420" height="315"
+src="https://www.youtube.com/embed/Xd7huBu39qk">
+</iframe>
+<iframe class="video" width="420" height="315"
+src="https://www.youtube.com/embed/0Kv_k4ypj6o">
+</iframe>
+
 
 </section>
 <section id=Resume>
     <h3>Resume:</h3>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpuHMLMbZu7293NayZayssGnE9lrYko63k7SmRQkTPAqeNkn7-&usqp=CAU" alt="web1">
-<img src="https://media.proprofs.com/images/QM/user_images/2503852/1571657721.png" alt="js">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTv8cDjAN10KJn75mfud5kimdDzp1WLHdPMDEC31jnknyoPLoYl&usqp=CAU" alt="htmlcss">
-
+    <div class="gridy">
+<div class="container" id="container1"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpuHMLMbZu7293NayZayssGnE9lrYko63k7SmRQkTPAqeNkn7-&usqp=CAU"  alt="web1">
+  <div class="overlay">Fullstack Developper</div>
+</div>
+<div   class="container" id="container2"><img class="image" src="https://media.proprofs.com/images/QM/user_images/2503852/1571657721.png"  alt="js">
+  <div class="overlay">Javascript</div>
+</div>
+<div  class="container" id="container3"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTv8cDjAN10KJn75mfud5kimdDzp1WLHdPMDEC31jnknyoPLoYl&usqp=CAU"  alt="htmlcss">
+  <div class="overlay">Html and CSS</div>
+</div>
+<div class="container" id="container4"><img class="image" src="https://e-solution.ma/manager/photos/shares/Photos-articles/the-seo-guide-to-angular-760x400.png"  alt="htmlcss">
+  <div class="overlay">Angular</div>
+</div>
+<div  class="container" id="container5"><img class="image" src="https://solvers.fr/wp-content/uploads/2019/06/8-astuces-pour-ame%CC%81liorer-les-performances-des-applications-React.png"  alt="htmlcss">
+  <div class="overlay">React</div>
+</div>
+<div  class="container" id="container6"><img class="image" src="https://info-digitale.com/wp-content/uploads/2018/02/Node.js-1.png"  alt="htmlcss">
+  <div class="overlay">Nodejs</div>
+</div>
+    </div>
 </section>
 <section id=Contact>
     <h3>Contact:</h3>
     <form>
-        <label>Name:</label>
-        <input type="text" name="first name" placeholder="Type your name here" />
+        <label class="label">Name:</label>
+        <input class="input" type="text" name="first name" placeholder="Type your name here" />
         <br />
-        <label>Number:</label>
-        <input type="number" name="number" value="12345678" />
+        <label class="label">Number:</label>
+        <input class="input" type="number" name="number" value="12345678" />
         <br />
-        <label>E-mail:</label>
-        <input type="email" name="email" />
+        <label class="label">E-mail:</label>
+        <input class="input" type="email" name="email" />
         <br>
-        <label>message:</label>
-         <input type="text" name="message" />
+        <label class="label">message:</label>
+         <input class="input" type="text" name="message" />
         <br />
         <input type="submit" value="Submit" />
       </form>
@@ -72,20 +101,6 @@ src="https://www.youtube.com/embed/PkZNo7MFNFg">
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </html>
